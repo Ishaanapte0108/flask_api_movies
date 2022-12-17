@@ -4,7 +4,7 @@ from flask import Flask, jsonify, request
 app = Flask(__name__)
 
 
-app.config['MONGO_DBNAME'] = 'movies'
+app.config['MONGO_DBNAME'] = 'movies'  # your database name
 app.config['MONGO_URI'] = 'mongodb+srv://<username>:<password>@trialcluster.spns5qz.mongodb.net/<database_name>?retryWrites=true&w=majority'
 mongo = PyMongo(app)
 
