@@ -3,3 +3,5 @@
   
   Make sure to install flask in you virtual environment
   and simply command python api.py
+
+  Either Enter name of the movie at the end of the URL or the ObjectId from the database
