@@ -12,6 +12,7 @@ app.config['MONGO_DBNAME'] = os.getenv('DB_NAME')  # your database name
 app.config['MONGO_URI'] = os.getenv(
     'DB_CONNECTION')  # your database url string
 mongo = PyMongo(app)
+
 # CREATE
 
 
@@ -33,6 +34,8 @@ def create_new_movie():
               'img': q['img'], 'summary': q['summary']}
 
     return jsonify(output)
+
+# READ ALL
 
 
 @app.route('/movies/read', methods=['GET'])
